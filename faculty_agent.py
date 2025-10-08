@@ -5,7 +5,7 @@ A comprehensive RAG-based AI agent for managing faculty schedules and workloads
 
 import pandas as pd
 import streamlit as st
-from langchain.agents import Tool
+from langchain_core.tools import Tool 
 from langchain.memory import ConversationBufferMemory
 import re
 import warnings
