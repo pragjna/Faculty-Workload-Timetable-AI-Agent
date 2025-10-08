@@ -366,6 +366,10 @@ def main():
             "• Availability checking\n"
             "• Policy information"
         )
+        if CHROMADB_AVAILABLE:
+            st.write("Vector Database: ✅ Active")
+        else:
+            st.write("Policy Search Fallback: ✅ Ready")
 
         st.header("📊 Current Data")
         st.write("Faculty Members:", len(agent.faculty_data))
